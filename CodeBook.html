@@ -88,11 +88,11 @@ img {
 <p>These are steps to create the tidy data files:</p>
 <ol style="list-style-type: decimal">
 <li>Download the raw data.</li>
-<li>Merging the training and the test sets in order to create one data set.</li>
-<li>Extracting the measurements on the mean and standard deviation for each measurement.</li>
+<li>Merge the training and the test sets in order to create one data set.</li>
+<li>Extract the measurements on the mean and standard deviation for each measurement.</li>
 <li>Use descriptive activity names to name the activities in the data set.</li>
-<li>Appropriately labels the data set with descriptive variable names.</li>
-<li>From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.</li>
+<li>Appropriately label the data set with descriptive variable names.</li>
+<li>From the data set in step 5, create a second, independent tidy data set with the average of each variable for each activity and each subject.</li>
 </ol>
 </div>
 <div id="cleaning-of-the-data" class="section level3">
@@ -108,7 +108,7 @@ img {
 <ul>
 <li>Class: character</li>
 <li>Values: walking, walking_upstairs, walking_downstairs, sitting, standing, laying</li>
-<li>Unit of measurement: None</li>
+<li>Unit of measurement: none</li>
 </ul>
 </div>
 <div id="subjectid" class="section level3">
@@ -117,7 +117,7 @@ img {
 <ul>
 <li>Class: numeric</li>
 <li>Values: from 1 to 30</li>
-<li>Units: None</li>
+<li>Unit of measurement: none</li>
 </ul>
 </div>
 <div id="other-variables" class="section level3">
@@ -134,82 +134,162 @@ img {
 <div id="tfbodyaccmeanxyz" class="section level4">
 <h4>t,fBodyAccmeanX,Y,Z</h4>
 <p>Mean value for linear body acceleration for X, Y, Z axes.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: ’g’s (gravity of earth -&gt; 9.80665 m/seg2)</li>
+</ul>
 </div>
 <div id="tfbodyaccstdxyz" class="section level4">
 <h4>t,fBodyAccstdX,Y,Z</h4>
 <p>Statdard deviation value for linear body acceleration for X, Y, Z axes.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: none</li>
+</ul>
 </div>
 <div id="tfgravityaccmeanxyz" class="section level4">
 <h4>t,fGravityAccmeanX,Y,Z</h4>
 <p>Mean value for gravity body acceleration for X, Y, Z axes.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: ’g’s (gravity of earth -&gt; 9.80665 m/seg2)</li>
+</ul>
 </div>
 <div id="tfgravityaccstdxyz" class="section level4">
 <h4>t,fGravityAccstdX,Y,Z</h4>
 <p>Statdard deviation value for gravity body acceleration for X, Y, Z axes.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: none</li>
+</ul>
 </div>
 <div id="tfbodyaccjerkmeanxyz" class="section level4">
 <h4>t,fBodyAccJerkmeanX,Y,Z</h4>
 <p>Mean value for jerk acceleration for X, Y, Z axes.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: ’g’s (gravity of earth -&gt; 9.80665 m/seg2)</li>
+</ul>
 </div>
 <div id="tfbodyaccjerkstdxyz" class="section level4">
 <h4>t,fBodyAccJerkstdX,Y,Z</h4>
 <p>Statdard deviation value for jerk acceleration for X, Y, Z axes.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: none</li>
+</ul>
 </div>
 <div id="tfbodygyromeanxyz" class="section level4">
 <h4>t,fBodyGyromeanX,Y,Z</h4>
 <p>Mean value for body gyroscope 3-axial signal.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: rad/seg</li>
+</ul>
 </div>
 <div id="tfbodygyrostdxyz" class="section level4">
 <h4>t,fBodyGyrostdX,Y,Z</h4>
 <p>Statdard deviation value for body gyroscope 3-axial signal.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: none</li>
+</ul>
 </div>
 <div id="tfbodygyrojerkmeanxyz" class="section level4">
 <h4>t,fBodyGyroJerkmeanX,Y,Z</h4>
 <p>Mean value for jerk gyroscope 3-axial signal.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: rad/seg</li>
+</ul>
 </div>
 <div id="tfbodygyrojerkstdxyz" class="section level4">
 <h4>t,fBodyGyroJerkstdX,Y,Z</h4>
 <p>Statdard deviation value for jerk gyroscope 3-axial signal.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: none</li>
+</ul>
 </div>
 <div id="tfbodyaccmagmean" class="section level4">
 <h4>t,fBodyAccMagmean</h4>
 <p>Mean value for body linear magnitude signal.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: m.</li>
+</ul>
 </div>
 <div id="tfbodyaccmagstd" class="section level4">
 <h4>t,fBodyAccMagstd</h4>
 <p>Statdard deviation value for body linear magnitude signal.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: none</li>
+</ul>
 </div>
 <div id="tfgravityaccmagmean" class="section level4">
 <h4>t,fGravityAccMagmean</h4>
 <p>Mean value for body gravity magnitude signal.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: m.</li>
+</ul>
 </div>
 <div id="tfgravityaccmagstd" class="section level4">
 <h4>t,fGravityAccMagstd</h4>
 <p>Statdard deviation value for body gravity magnitude signal.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: none.</li>
+</ul>
 </div>
 <div id="tfbodyaccjerkmagmean" class="section level4">
 <h4>t,fBodyAccJerkMagmean</h4>
 <p>Mean value for jerk gravity magnitude signal.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: m</li>
+</ul>
 </div>
 <div id="tfbodyaccjerkmagstd" class="section level4">
 <h4>t,fBodyAccJerkMagstd</h4>
 <p>Statdard deviation value for jerk gravity magnitude signal.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: none</li>
+</ul>
 </div>
 <div id="tfbodygyromagmean" class="section level4">
 <h4>t,fBodyGyroMagmean</h4>
 <p>Mean value for body gyroscope magnitude signal.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: rad/seg</li>
+</ul>
 </div>
 <div id="tfbodygyromagstd" class="section level4">
 <h4>t,fBodyGyroMagstd</h4>
 <p>Statdard deviation value for body gyroscope magnitude signal.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: none</li>
+</ul>
 </div>
 <div id="tfbodygyrojerkmagmean" class="section level4">
 <h4>t,fBodyGyroJerkMagmean</h4>
 <p>Mean value for jerk gyroscope magnitude signal.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: rad/seg</li>
+</ul>
 </div>
 <div id="tfbodygyrojerkmagstd" class="section level4">
 <h4>t,fBodyGyroJerkMagstd</h4>
 <p>Statdard deviation value for jerk gyroscope magnitude signal.</p>
+<ul>
+<li>Class: numeric</li>
+<li>Unit of measurement: none</li>
+</ul>
 </div>
 </div>
 </div>

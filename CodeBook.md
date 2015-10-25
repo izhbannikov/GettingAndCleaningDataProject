@@ -46,7 +46,7 @@ Activity name.
 
 * Class: character
 * Values: walking, walking_upstairs, walking_downstairs, sitting, standing, laying
-* Unit of measurement: None
+* Unit of measurement: none
 
 
 ###subjectId
@@ -54,7 +54,7 @@ Subject Id.
 
 * Class: numeric
 * Values: from 1 to 30
-* Units: None
+* Unit of measurement: none
 
 ###Other variables
 
@@ -71,62 +71,122 @@ These are all numeric variables.
 ####t,fBodyAccmeanX,Y,Z
 Mean value for linear body acceleration for X, Y, Z axes.
 
+* Class: numeric
+* Unit of measurement: 'g's (gravity of earth -> 9.80665 m/seg2)
+
 ####t,fBodyAccstdX,Y,Z
 Statdard deviation value for linear body acceleration for X, Y, Z axes.
+
+* Class: numeric
+* Unit of measurement: none
 
 ####t,fGravityAccmeanX,Y,Z
 Mean value for gravity body acceleration for X, Y, Z axes.
 
+* Class: numeric
+* Unit of measurement: 'g's (gravity of earth -> 9.80665 m/seg2)
+
 ####t,fGravityAccstdX,Y,Z
 Statdard deviation value for gravity body acceleration for X, Y, Z axes.
+
+* Class: numeric
+* Unit of measurement: none
 
 ####t,fBodyAccJerkmeanX,Y,Z
 Mean value for jerk acceleration for X, Y, Z axes.
 
+* Class: numeric
+* Unit of measurement: 'g's (gravity of earth -> 9.80665 m/seg2)
+
 ####t,fBodyAccJerkstdX,Y,Z
 Statdard deviation value for jerk acceleration for X, Y, Z axes.
+
+* Class: numeric
+* Unit of measurement: none
 
 ####t,fBodyGyromeanX,Y,Z
 Mean value for body gyroscope 3-axial signal.
 
+* Class: numeric
+* Unit of measurement: rad/seg
+
 ####t,fBodyGyrostdX,Y,Z
 Statdard deviation value for body gyroscope 3-axial signal.
+
+* Class: numeric
+* Unit of measurement: none
 
 ####t,fBodyGyroJerkmeanX,Y,Z
 Mean value for jerk gyroscope 3-axial signal.
 
+* Class: numeric
+* Unit of measurement: rad/seg
+
 ####t,fBodyGyroJerkstdX,Y,Z
 Statdard deviation value for jerk gyroscope 3-axial signal.
+
+* Class: numeric
+* Unit of measurement: none
 
 ####t,fBodyAccMagmean
 Mean value for body linear magnitude signal.
 
+* Class: numeric
+* Unit of measurement: m.
+
 ####t,fBodyAccMagstd
 Statdard deviation value for body linear magnitude signal.
+
+* Class: numeric
+* Unit of measurement: none
 
 ####t,fGravityAccMagmean
 Mean value for body gravity magnitude signal.
 
+* Class: numeric
+* Unit of measurement: m.
+
 ####t,fGravityAccMagstd
 Statdard deviation value for body gravity magnitude signal.
+
+* Class: numeric
+* Unit of measurement: none.
 
 ####t,fBodyAccJerkMagmean
 Mean value for jerk gravity magnitude signal.
 
+* Class: numeric
+* Unit of measurement: m
+
 ####t,fBodyAccJerkMagstd
 Statdard deviation value for jerk gravity magnitude signal.
+
+* Class: numeric
+* Unit of measurement: none
 
 ####t,fBodyGyroMagmean
 Mean value for body gyroscope magnitude signal.
 
+* Class: numeric
+* Unit of measurement: rad/seg
+
 ####t,fBodyGyroMagstd
 Statdard deviation value for body gyroscope magnitude signal.
+
+* Class: numeric
+* Unit of measurement: none
 
 ####t,fBodyGyroJerkMagmean
 Mean value for jerk gyroscope magnitude signal.
 
+* Class: numeric
+* Unit of measurement: rad/seg
+
 ####t,fBodyGyroJerkMagstd
 Statdard deviation value for jerk gyroscope magnitude signal.
+
+* Class: numeric
+* Unit of measurement: none
 
 
 ##Sources
