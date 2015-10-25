@@ -2,7 +2,7 @@
 library(plyr)
 
 # Setting the work directory:
-setwd("~/Dropbox/Data Scientist Specialization/Getting and cleaning data/Project/")
+setwd("~/Dropbox/Data Scientist Specialization/Getting and cleaning data/GettingAndCleaningDataProject/")
 
 # 0: Downloading the dataset:
 download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", "Dataset.zip", method="curl")
@@ -40,7 +40,7 @@ names(data.mean.std) <- c("activity", "subjId", as.character(droplevels(features
 activity.names <- read.table("UCI HAR Dataset/activity_labels.txt")
 data.mean.std$activity <- tolower(activity.names$V2[data.mean.std$activity])
 
-## 4: Appropriately labels the data set with descriptive variable names.
+## 4: Appropriately label the data set with descriptive variable names.
 clean.features <- names(data.mean.std) 
 clean.features <- gsub("-", "", clean.features)
 clean.features <- gsub("\\(\\)", "", clean.features)
@@ -48,4 +48,7 @@ names(data.mean.std) <- c(clean.features)
 
 ## 5: From the data set in step 4, create a second, independent tidy data set with the average of 
 # each variable for each activity and each subject.
-second.dataset <- ddply(data.mean.std, c("activity","subjId"), numcolwise(mean))
+tidy.dataset <- ddply(data.mean.std, c("activity","subjId"), numcolwise(mean))
+
+## 6: Output the tidy data:
+write.table(file = "tidy.data.txt",x = tidy.dataset, row.names = FALSE)
